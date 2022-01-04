@@ -9,6 +9,7 @@ const App = () => {
   const quote = datas.quote;
   const author = datas.author;
 
+  // setTimeOut prevent a new request befero 250ms
   useEffect(() => {
     const timeout = setTimeout(() => {
       fetch(
